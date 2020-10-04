@@ -16,7 +16,7 @@ bash   $SCRIPT_PATH
 
 ## 02 - Disable SWAP:
 ```
-SCRIPT_PATH="02_disable_swap.sh"
+SCRIPT_PATH="01_prepare_nodes/02_disable_swap.sh"
 bash   $SCRIPT_PATH
 ```
 
