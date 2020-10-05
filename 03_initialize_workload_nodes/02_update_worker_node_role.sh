@@ -30,7 +30,7 @@ echo "Would you like to set the role '$ROLE' for node '$NODE' ?"
 
 select yn in "Yes" "No"; do
     case $yn in
-        Yes ) kubectl label nodes $NODE node-role.kubernetes.io/$ROLE: ""; break;;
+        Yes ) kubectl label nodes $NODE node-role.kubernetes.io/$ROLE=""; break;;
         No ) echo "Aborting ..."; exit 1;;
     esac
 done
